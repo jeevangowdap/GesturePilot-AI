@@ -1,0 +1,11 @@
+{
+  "name": "gesturepilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"python -m uvicorn main:app --app-dir backend --reload --port 8000\" \"npm --prefix frontend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
